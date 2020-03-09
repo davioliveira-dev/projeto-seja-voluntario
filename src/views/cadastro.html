@@ -3,29 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/form.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/form.css">
     <title>Seja Voluntário!</title>
 </head>
 <body>
     <main class="container">
         <header class="header row">
-            <a href="./index.html">
-                <img src="./assets/images/logo.png" alt="Logo do Seja Voluntário">
+            <a href="/">
+                <img src="/assets/images/logo.png" alt="Logo do Seja Voluntário">
                 <h1 class="text-red text-shadow">Seja Voluntário</h1>
             </a>
         </header><!--HEADER-->
 
         <section class="form row">
             <h2 class="text-green">Cadastre sua vaga de voluntariado</h2>
-            <form class="flex" onsubmit="return validateNotice(this)">
+            <form class="flex" onsubmit="return validateNotice(this)" method="POST" action="/cadastro">
                 <input type="text" name="email" class="col-full" placeholder="Informe o email do responsável ...">
-                <textarea name="descricao" placeholder="Informe a descrição da vaga ..." rows="4">
+                <textarea name="description" placeholder="Informe a descrição da vaga ..." rows="4">
 
                 </textarea>
                 <div class="form-row">
-                    <input type="text" name="titulo" class="col-half" placeholder="Informe o título da vaga ...">
-                    <input type="text" name="cidade" class="col-half" placeholder="Informe a cidade da vaga ...">
+                    <input type="text" name="title" class="col-half" placeholder="Informe o título da vaga ...">
+                    <input type="text" name="city" class="col-half" placeholder="Informe a cidade da vaga ...">
                 </div>
                 <div class="text-right">
                     <button type="submit" class="btn btn-green">Enviar Anúncio</button>
@@ -39,6 +39,6 @@
             </p>
         </footer><!--FOOTER-->
     </main><!--CONTAINER-->
-    <script src="./assets/js/forms.js"></script>
+    <script src="/assets/js/forms.js"></script>
 </body>
 </html>
