@@ -1,4 +1,4 @@
-# seja-voluntario
+# Seja Voluntário
 Projeto Seja Voluntário, feito durante a semana FullStack Essencial, da CodDev!
 
 
