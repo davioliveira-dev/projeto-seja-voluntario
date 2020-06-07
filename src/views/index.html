@@ -1,64 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="/assets/images/favicon.ico" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
     <title>Seja Voluntário!</title>
-</head>
-<body>
+  </head>
+  <body>
     <main class="container">
-        <header class="header row">
-            <a href="/">
-                <img src="/assets/images/logo.png" alt="Logo do Seja Voluntário">
-                <h1 class="text-red text-shadow">Seja Voluntário</h1>
-            </a>
-        </header><!--HEADER-->
-        <section class="cta flex row">
-            <article>
-                <h2 class="text-blue">Busque vagas de voluntariado</h2>
-                <p>
-                    Busque uma vaga perto de você e tome uma atitude transformadora
-                     ajudando o próximo
-                </p>
-                <p>
-                    <a class="btn btn-blue" href="/busca">Quero ser voluntário!</a>
-                </p>
-            </article>
-            <article>
-                <h2 class="text-green">Anuncie vagas de voluntariado</h2>
-                <p>
-                    Você que é de uma ONG ou Instituição filantrópica,
-                     cadastre suas vagas para encontrar voluntários aí perto de você!
-                </p>
-                <p>
-                    <a class="btn btn-green" href="/cadastro">Quero anunciar voluntariado!</a>
-                </p>
-            </article>
-            
-        </section><!--CTA-->
+      <header class="header row">
+        <a href="/">
+          <img src="/assets/images/logo.png" alt="Logo do Seja Voluntário" />
+          <h1 class="text-red text-shadow">Seja Voluntário</h1>
+        </a>
+      </header>
+      <!--HEADER-->
+      <section class="cta flex row">
+        <article>
+          <h2 class="text-blue">Busque vagas de voluntariado</h2>
+          <p>
+            Busque uma vaga perto de você e tome uma atitude transformadora
+            ajudando o próximo
+          </p>
+          <p>
+            <a class="btn btn-blue" href="/busca">Quero ser voluntário!</a>
+          </p>
+        </article>
+        <article>
+          <h2 class="text-green">Anuncie vagas de voluntariado</h2>
+          <p>
+            Você que é de uma ONG ou Instituição filantrópica, cadastre suas
+            vagas para encontrar voluntários aí perto de você!
+          </p>
+          <p>
+            <a class="btn btn-green" href="/cadastro"
+              >Quero anunciar voluntariado!</a
+            >
+          </p>
+        </article>
+      </section>
+      <!--CTA-->
 
-        <section class="notices row">
-            <h3 class="text-red">Últimos anúncios de vagas!</h3>
-            <div class="grid grid-col-3">
-            {{#each vagas}}
-                <article class="notice">
-                    <h4>{{this.title}}</h4>
-                    <p class="city"><strong>{{this.city}}</strong></p>
-                    <p>{{this.description}}</p>
-                    <p>
-                        <a class="btn btn-red" href="/anuncio/{{this.id}}">Saiba Mais</a>
-                    </p>
-                </article>
-                {{/each}}
-            </div>
-        </section><!--NOTICES-->
-
-        <footer class="footer">
+      <section class="notices row">
+        <h3 class="text-red">Últimos anúncios de vagas!</h3>
+        <div class="grid grid-col-3">
+          {{#each vagas}}
+          <article class="notice">
+            <h4>{{this.title}}</h4>
+            <p class="city"><strong>{{this.city}}</strong></p>
+            <p>{{this.description}}</p>
             <p>
-                <strong>Seja Voluntário</strong> - Feito com amor pelo Davi Oliveira - DEV
+              <a class="btn btn-red" href="/anuncio/{{this.id}}">Saiba Mais</a>
             </p>
-        </footer><!--FOOTER-->
-    </main><!--CONTAINER-->
-</body>
+          </article>
+          {{/each}}
+        </div>
+      </section>
+      <!--NOTICES-->
+
+      <footer class="footer">
+        <p>
+          <strong>Seja Voluntário</strong> - Feito com amor pelo Davi Oliveira -
+          DEV
+        </p>
+      </footer>
+      <!--FOOTER-->
+    </main>
+    <!--CONTAINER-->
+  </body>
 </html>

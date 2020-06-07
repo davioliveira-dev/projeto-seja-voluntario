@@ -1,35 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/css/style.css">
-    <link rel="stylesheet" href="/assets/css/form.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="/assets/images/favicon.ico" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/form.css" />
     <title>Seja Voluntário!</title>
-</head>
-<body>
+  </head>
+  <body>
     <main class="container">
-        <header class="header row">
-            <a href="/">
-                <img src="/assets/images/logo.png" alt="Logo do Seja Voluntário">
-                <h1 class="text-red text-shadow">Seja Voluntário</h1>
-            </a>
-        </header><!--HEADER-->
+      <header class="header row">
+        <a href="/">
+          <img src="/assets/images/logo.png" alt="Logo do Seja Voluntário" />
+          <h1 class="text-red text-shadow">Seja Voluntário</h1>
+        </a>
+      </header>
+      <!--HEADER-->
 
-        <section class="notices row">
-            <h2 class="text-red">{{vaga.title}}</h2>
-                <p class="city"><strong>{{vaga.city}}</strong></p>
-                <p>{{vaga.description}}</p>
-                <p>
-                    <a class="btn btn-red" href="mailto:{{vaga.email}}">Enviar e-mail</a>
-                </p>
-        </section><!--NOTICES-->
+      <section class="notices row">
+        <h2 class="text-red">{{vaga.title}}</h2>
+        <p class="city"><strong>{{vaga.city}}</strong></p>
+        <p>{{vaga.description}}</p>
+        <p>
+          <a class="btn btn-red" href="mailto:{{vaga.email}}">Enviar e-mail</a>
+        </p>
+      </section>
+      <!--NOTICES-->
 
-        <footer class="footer">
-            <p>
-                <strong>Seja Voluntário</strong> - Feito com amor pelo Davi Oliveira - DEV
-            </p>
-        </footer><!--FOOTER-->
-    </main><!--CONTAINER-->
-</body>
+      <footer class="footer">
+        <p>
+          <strong>Seja Voluntário</strong> - Feito com amor pelo Davi Oliveira -
+          DEV
+        </p>
+      </footer>
+      <!--FOOTER-->
+    </main>
+    <!--CONTAINER-->
+  </body>
 </html>
