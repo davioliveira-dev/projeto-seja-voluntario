@@ -14,19 +14,19 @@
 <b style="font-size:22px;">Demonstrando a lista de vagas de voluntariado:</b>
 
 <h3 align="center">
-  <img src="./images/foto2.png">
+  <img src="./images/foto2.PNG">
 </h3>
 
 <b style="font-size:22px;">Demonstrando a página de busca para vagas de voluntariado:</b>
 
 <h3 align="center">
-  <img src="./images/foto3.png">
+  <img src="./images/foto3.PNG">
 </h3>
 
 <b style="font-size:22px;">Demonstrando a página de cadastro para vagas de voluntariado:</b>
 
 <h3 align="center">
-  <img src="./images/foto4.png">
+  <img src="./images/foto4.PNG">
 </h3>
 
 <b style="font-size:22px;">Demonstrando a busca de vagas para voluntario</b>
